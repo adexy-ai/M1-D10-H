@@ -32,7 +32,7 @@ Create a variable called me and assign to it an object containing the following 
 let me = {
     name: "Aderiye",
     surname: "Adeniran",
-    age: 35,
+    age: 75,
 };
 console.log(me)
 /* EXERCISE E
@@ -48,14 +48,14 @@ console.log(me)
 /* EXERCISE G
 Write a piece of code for programmatically removing the last skill from the skills array inside the me object.
 */
-        //delete me.skill[0]
-        //console.log(me)
+me.skills = me.skills.pop() 
+console.log(me.skills)
 // JS Functions
 /* EXERCISE 1
 Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 function dice() {
-    let num = Math.floor(Math.random() * 6);
+    let num = Math.floor(Math.random() * 6) +1;
     console.log("This is a random number:", num)
 }
 console.log('The next line calls the function "dice"')
